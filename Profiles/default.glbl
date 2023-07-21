@@ -9,4 +9,9 @@
       <initValue>'https://www.saucedemo.com/'</initValue>
       <name>URL_BASE</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://katalon-demo-cura.herokuapp.com/'</initValue>
+      <name>URL_CITAS</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
