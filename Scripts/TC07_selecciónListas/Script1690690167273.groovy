@@ -45,6 +45,11 @@ WebUI.sendKeys(findTestObject('Object Repository/ALTAUSUARIO/WIDGETS/SELECTMENU/
 
 WebUI.selectOptionByLabel(findTestObject('Object Repository/ALTAUSUARIO/WIDGETS/SELECTMENU/select_oldSelect'), 'Voilet', false)
 
+WebUI.sendKeys(findTestObject('Object Repository/ALTAUSUARIO/WIDGETS/SELECTMENU/input_multiselect'), 'Green')
+
+WebUI.delay(2)
+
+WebUI.sendKeys(findTestObject('Object Repository/ALTAUSUARIO/WIDGETS/SELECTMENU/input_multiselect'), Keys.chord(Keys.TAB))
 
 
 
