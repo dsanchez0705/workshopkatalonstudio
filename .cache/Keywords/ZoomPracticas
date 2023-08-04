@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "4F3793FFC9F018335BD49AD140783052",
+  "keywordClasses": [
+    {
+      "name": "ZoomPracticas",
+      "keywordMethods": [
+        {
+          "name": "zoomOut",
+          "parameters": [
+            {
+              "name": "iteracionZoomOut",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

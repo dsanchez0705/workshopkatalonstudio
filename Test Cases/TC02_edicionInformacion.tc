@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_edicionInformacion</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>44127b18-9cb2-4e89-9173-fe3479665f62</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2344422c-3f26-475d-a857-fce6faf3413d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1fb53143-09d8-4e38-9b7b-7cdb614371b6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a4fe4415-8baa-4105-82f5-20d8c10edf59</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Jorge'</defaultValue>
+      <description></description>
+      <id>2344422c-3f26-475d-a857-fce6faf3413d</id>
+      <masked>false</masked>
+      <name>firstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'jorge@gmail.com'</defaultValue>
+      <description></description>
+      <id>1fb53143-09d8-4e38-9b7b-7cdb614371b6</id>
+      <masked>false</masked>
+      <name>Email</name>
+   </variable>
+   <variable>
+      <defaultValue>'90\r\n'</defaultValue>
+      <description></description>
+      <id>a4fe4415-8baa-4105-82f5-20d8c10edf59</id>
+      <masked>false</masked>
+      <name>Age</name>
+   </variable>
+</TestCaseEntity>
