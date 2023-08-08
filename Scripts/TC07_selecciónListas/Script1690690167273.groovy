@@ -51,6 +51,14 @@ WebUI.delay(2)
 
 WebUI.sendKeys(findTestObject('Object Repository/ALTAUSUARIO/WIDGETS/SELECTMENU/input_multiselect'), Keys.chord(Keys.TAB))
 
+WebUI.sendKeys(findTestObject('Object Repository/ALTAUSUARIO/WIDGETS/SELECTMENU/input_multiselect'), 'Blue')
 
+WebUI.delay(2)
+
+WebUI.sendKeys(findTestObject('Object Repository/ALTAUSUARIO/WIDGETS/SELECTMENU/input_multiselect'), Keys.chord(Keys.TAB))
+
+WebUI.selectOptionByLabel(findTestObject('Object Repository/ALTAUSUARIO/WIDGETS/SELECTMENU/select_standard'), 'Saab', false)
+
+WebUI.closeBrowser()
 
 

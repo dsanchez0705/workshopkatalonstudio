@@ -14,30 +14,30 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.sun.net.httpserver.Authenticator.Failure as Failure
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('TC08_iniciarSesión'), [('userName') : 'EliudSanchez' , ('password') : 'Eliud*120521'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl(GlobalVariable.URL_DEMOQA)
+WebUI.scrollToElement(findTestObject('Object Repository/ALTAUSUARIO/BOOKSTORE/button_bookStore2'), 1)
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('Object Repository/ALTAUSUARIO/BOOKSTORE/button_bookStore2'))
 
-WebUI.scrollToElement(findTestObject('Object Repository/ALTAUSUARIO/BOOKSTORE/button_bookStore'), 1)
+WebUI.setText(findTestObject('Object Repository/ALTAUSUARIO/BOOKSTORE/input_search'), 'Eloquent JavaScript, Second Edition')
 
-WebUI.click(findTestObject('Object Repository/ALTAUSUARIO/BOOKSTORE/button_bookStore'))
+WebUI.click(findTestObject('Object Repository/ALTAUSUARIO/BOOKSTORE/div_eloquent'))
 
-WebUI.scrollToElement(findTestObject('Object Repository/ALTAUSUARIO/BOOKSTORE/button_login'), 1)
+WebUI.click(findTestObject('Object Repository/ALTAUSUARIO/BOOKSTORE/button_add'))
 
-WebUI.click(findTestObject('Object Repository/ALTAUSUARIO/BOOKSTORE/button_login'))
+//WebUI.acceptAlert(FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/ALTAUSUARIO/BOOKSTORE/input_userName'), 'EliudSanchez')
+WebUI.verifyTextPresent('Marijn Haverbeke', false)
 
-WebUI.setText(findTestObject('Object Repository/ALTAUSUARIO/BOOKSTORE/input_password'), 'Eliud*120521')
+WebUI.closeBrowser()
 
-WebUI.click(findTestObject('Object Repository/ALTAUSUARIO/BOOKSTORE/button_login2'))
 
-WebUI.verifyTextPresent('EliudSanchez', false)
+
 
 
 
